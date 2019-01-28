@@ -1,0 +1,72 @@
+{
+    "data": {
+      "products": {
+        "edges": [
+          {
+            "node": {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzE5NDQ3NDc1NzMzNDU=",
+              "handle": "sfdgg",
+              "title": "sfdgg",
+              "availableForSale": false,
+              "updatedAt": "2019-01-27T01:22:54Z",
+              "description": "",
+              "variants": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xODQ3NzE2MjM2NTAyNQ==",
+                      "title": "Default Title",
+                      "availableForSale": false,
+                      "price": "0.00"
+                    }
+                  }
+                ]
+              },
+              "images": {
+                "edges": [
+                  {
+                    "node": {
+                      "transformedSrc": "https:\/\/cdn.shopify.com\/s\/files\/1\/0013\/1704\/4321\/products\/TyPy.png?v=1548552174"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "node": {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzE5NDQ4NDExMjU5ODU=",
+              "handle": "wefs",
+              "title": "wefs",
+              "availableForSale": false,
+              "updatedAt": "2019-01-27T01:39:01Z",
+              "description": "",
+              "variants": {
+                "edges": [
+                  {
+                    "node": {
+                      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xODQ3NzU0MjQ3MzgyNQ==",
+                      "title": "1",
+                      "availableForSale": false,
+                      "price": "0.00"
+                    }
+                  },
+                  {
+                    "node": {
+                      "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC8xODQ3NzU0MjUwNjU5Mw==",
+                      "title": "c",
+                      "availableForSale": false,
+                      "price": "0.00"
+                    }
+                  }
+                ]
+              },
+              "images": {
+                "edges": []
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
