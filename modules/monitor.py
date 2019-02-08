@@ -8,13 +8,18 @@ from modules.compare import Compare
 from classes.logger import log
 from classes.timeParser import timeParser
 from classes.distribute import Distribute
+from classes.proxy import Proxy
 
-MONITOR_SLEEP = 10
+proxyManager = Proxy(useProxies=False)
+
+MONITOR_SLEEP = 10 #.5
+PROXY_ROTATION_RATE = 30 # Every X scrapes, will switch proxies
 
 class Monitor:
     def __init__(self, link, siteInfo):
         self.link = link
         self.siteName = siteInfo['siteName']
+        self.notifGroup = siteInfo['notifGroup']
         self.shopifyDomain = "https://" + siteInfo['myShopifyDomain']
 
         self.headers = {
@@ -26,19 +31,33 @@ class Monitor:
         self.isBase = True
         self.isPasswordUp = False
         self.lastUpdated = '0'
+        self.sendNotif = True
+
+        self.proxyNum = 0
+        self.proxy = {}
+
+        self.rotationNum = 0
 
         self.run()
 
     def scrape(self):
         if self.isBase:
-            connection = "first: 100, reverse: true"
+            connection = "first: 250, reverse: true"
         else:
             connection = """first: 100, reverse: true, query: "updated_at:>='{}'" """.format(str(self.lastUpdated))
 
         schema = SCHEMA.replace("{PRODUCT_CONNECTION}", connection)
 
+        if self.isBase or self.proxyNum == PROXY_ROTATION_RATE:
+            self.proxy = proxyManager.nextProxy()
+        
+        # -> does not send notification for first two scrapes to prevent product spam
+        if self.rotationNum < 2:
+            self.sendNotif = False
+            self.rotationNum += 1
+
         try:
-            req = requests.post(self.shopifyDomain + '/api/graphql.json', json={"query": schema}, headers=self.headers, proxies=False)
+            req = requests.post(self.shopifyDomain + '/api/graphql.json', json={"query": schema}, headers=self.headers, proxies=self.proxy)
         except Exception as e:
             log('[Error] Unable to make /graphql.json request - ' + str(e) + ' - ' + self.link)
             return False
@@ -51,15 +70,16 @@ class Monitor:
             if not self.isPasswordUp:
                 self.isPasswordUp = True
                 if not self.isBase:
-                    Thread(target=Distribute, args=("Password Page Up", self.link, self.siteName), kwargs={"isPassword": True}).start()
+                    Thread(target=Distribute, args=("Password Page Up", self.link, self.siteName, 'password')).start()
                     log('Password Page Up - ' + self.link)
-            return False
+            return True
 
         if self.isPasswordUp:
             self.isPasswordUp = False
             if not self.isBase:
-                Thread(target=Distribute, args=("Password Page Down", self.link, self.siteName), kwargs={"isPassword": True}).start()
+                Thread(target=Distribute, args=("Password Page Down", self.link, self.siteName, 'password')).start()
                 log('Password Page Down - ' + self.link)
+                self.sendNotif = False
 
         if req.status_code == 304:
             pass
@@ -88,12 +108,12 @@ class Monitor:
                 if updatedAt > str(tempUpdated):
                     tempUpdated = updatedAt
 
-                Thread(target=Compare, args=(product, self.link, self.siteName, self.isBase)).start()
+                Thread(target=Compare, args=(product, self.link, self.siteName, self.notifGroup, self.isBase, self.sendNotif)).start()
 
         if tempUpdated > self.lastUpdated:
             self.lastUpdated = tempUpdated
 
-        
+
     def run(self):
         while True:
             for x in range(3):
@@ -106,6 +126,10 @@ class Monitor:
                 log('[Success] Finished inital /graphql.json scrape - ' + self.link)
                 self.isBase = False
             else:
-                log('[Success] Scraped completed - ' + self.link)
+                log('[Success] Scrape completed - ' + self.link)
+
+            self.proxyNum += 1
+
+            self.sendNotif = True
             
             time.sleep(MONITOR_SLEEP)

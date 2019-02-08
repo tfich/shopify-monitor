@@ -4,6 +4,7 @@ from threading import Thread
 from classes.logger import log
 
 CLIENT_SYNC_DELAY = 180
+SEND_LOGS = False
 
 CLIENTS = []
 
@@ -27,22 +28,23 @@ t.daemon = True
 t.start()
 
 class Distribute:
-    def __init__(self, notifType, siteLink, siteName, isPassword=False, productInfo={}):
+    def __init__(self, notifType, siteLink, siteName, notifGroup, productInfo={}):
         self.notifType = notifType
         self.siteLink = siteLink
         self.siteName = siteName
+        self.notifGroup = notifGroup.lower()
         self.productInfo = productInfo
 
-        if isPassword:
+        if self.notifGroup == 'password':
             for client in CLIENTS:
-                self.sendPassword(client)
-                # Thread(target=self.sendPassword, args=(client)).start()
+                Thread(target=self.sendPassword, args=(client,)).start()
 
         else:
             for client in CLIENTS:
-                self.sendProduct(client)
-                # print(client)
-                # Thread(target=self.sendProduct, args=(client)).start()
+                Thread(target=self.sendProduct, args=(client,)).start()
+
+        if SEND_LOGS:
+            Thread(target=(self.sendLog)).start()
 
     def sendPassword(self, client):
         embed = {
@@ -123,11 +125,11 @@ class Distribute:
                     "title_link": self.productInfo['link'],
                     "color": "#" + client['color'],
                     "fields": [
-                    {
-                        "title": "Price:",
-                        "value": self.productInfo['price'],
-                        "short": False
-                    }
+                        {
+                            "title": "Price:",
+                            "value": self.productInfo['price'],
+                            "short": False
+                        }
                     ],
                     "thumb_url": self.productInfo['image'],
                     "footer_icon": client['icon'],
@@ -150,13 +152,30 @@ class Distribute:
                 "value": atc2,
                 "short": True
             })
-
-        if self.productInfo['filtered']:
-            webhook = client['filtered']
+        
+        if self.notifGroup == 'main':
+            if self.productInfo['filtered']:
+                webhook = client['filtered']
+            else:
+                webhook = client['unfiltered']
         else:
-            webhook = client['unfiltered']
+            webhook = client[self.notifGroup]
 
         for x in range(3):
             req = requests.post(webhook, json=embed, headers={"Content-Type": "application/json"})
+            if req.status_code == 200:
+                break
+
+    def sendLog(self):
+        payload = {
+            "platform": "shopify",
+            "product": self.productInfo['title'],
+            "keywords": self.productInfo['filtered'],
+            "site": self.siteLink,
+            "link": self.productInfo['link']
+        }
+
+        for x in range(3):
+            req = requests.post("https://motion-backend.herokuapp.com/api/logs", json=payload, headers={"Content-Type": "application/json"})
             if req.status_code == 200:
                 break

@@ -1,1 +1,1 @@
-# motion-shopify
+# Motion Shopify

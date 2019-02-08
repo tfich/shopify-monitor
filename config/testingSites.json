@@ -1,0 +1,26 @@
+{
+    "https://tylertesting11.myshopify.com": {
+        "apiKey": "02d3ad0e2d6c2274a844c22e82da5075",
+        "siteName": "Testing Site",
+        "myShopifyDomain": "tylertesting11.myshopify.com",
+        "notifGroup": "main",
+        "active": true,
+        "url": "https://tylertesting11.myshopify.com"
+    },
+    "https://kith.com": {
+        "apiKey": "08430b96c47dd2ac8e17e305db3b71e8",
+        "siteName": "Kith",
+        "myShopifyDomain": "kithnyc.myshopify.com",
+        "notifGroup": "main",
+        "active": true,
+        "url": "https://kith.com"
+    },
+    "https://undefeated.com": {
+        "apiKey": "a0faf54ad7ec6fbbab86cd3f949c3cb9",
+        "siteName": "Undefeated",
+        "myShopifyDomain": "undefeated.myshopify.com",
+        "notifGroup": "main",
+        "active": true,
+        "url": "https://undefeated.com"
+    }
+}

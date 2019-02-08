@@ -15,11 +15,11 @@ def kwPull():
         return []
 
 def kwUpdater():
-    global CLIENTS
+    global KEYWORDS
     while True:
         kwReq = kwPull()
         if kwReq:
-            CLIENTS = kwReq
+            KEYWORDS = kwReq
         time.sleep(KW_SYNC_DELAY)
 
 t = Thread(target=kwUpdater)

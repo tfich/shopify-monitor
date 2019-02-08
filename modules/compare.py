@@ -26,11 +26,13 @@ CURRENCIES = {
 }
 
 class Compare:
-    def __init__(self, product, link, siteName, isBase):
+    def __init__(self, product, link, siteName, notifGroup, isBase, sendNotif):
         self.product = product
         self.link = link
         self.siteName = siteName
+        self.notifGroup = notifGroup
         self.isBase = isBase
+        self.sendNotif = sendNotif
 
         self.productInfo = {}
 
@@ -83,10 +85,11 @@ class Compare:
                 self.productInfo['filtered'] = True
             else:          
                 filterStr = self.productInfo['title'] + str(productId) + self.product['handle'].replace('-', ' ') + self.productInfo['image'] + self.product['vendor']  + ''.join(self.product['tags']) + self.product['variants']['edges'][0]['node']['title'] + self.product['variants']['edges'][0]['node']['sku']
-                if isFiltered(filterStr):
-                    self.productInfo['filtered'] = True
+                isFilt = isFiltered(filterStr)
+                if isFilt:
+                    self.productInfo['filtered'] = isFilt
                 else:
-                    self.productInfo['filtered'] = False
+                    self.productInfo['filtered'] = isFilt
 
 
             self.productInfo['variants'] = []
@@ -101,14 +104,14 @@ class Compare:
 
                     self.productInfo['variants'].append(varTemp)
 
-            if not self.isBase:
-                Thread(target=Distribute, args=("New Product", self.link, self.siteName), kwargs={"productInfo": self.productInfo}).start()
+            if not self.isBase and self.sendNotif:
+                Thread(target=Distribute, args=("New Product", self.link, self.siteName, self.notifGroup), kwargs={"productInfo": self.productInfo}).start()
                 log('[Success] Monitor change detected (new) - ' + self.productInfo['link'])
 
             updateList(productId, self.productInfo)
 
             # -> TESTING ONLY <- #
-            # Thread(target=Distribute, args=("Restock", self.link, self.siteName), kwargs={"productInfo": self.productInfo}).start()
+            # Thread(target=Distribute, args=("Restock", self.link, self.siteName, self.notifGroup), kwargs={"productInfo": self.productInfo}).start()
             # log('[Success] Monitor change detected (restock) - ' + self.productInfo['link'])
             # -> TESTING ONLY <- #
 
@@ -128,8 +131,8 @@ class Compare:
                 newVars.append(varTemp)
 
         if self.isRestock(newVars):
-            if not self.isBase:
-                Thread(target=Distribute, args=("Restock", self.link, self.siteName), kwargs={"productInfo": self.productInfo}).start()
+            if not self.isBase and self.sendNotif:
+                Thread(target=Distribute, args=("Restock", self.link, self.siteName, self.notifGroup), kwargs={"productInfo": self.productInfo}).start()
                 log('[Success] Monitor change detected (restock) - ' + self.productInfo['link'])
 
             updateList(productId, self.productInfo)
