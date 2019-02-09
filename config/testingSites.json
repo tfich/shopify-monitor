@@ -22,5 +22,13 @@
         "notifGroup": "main",
         "active": true,
         "url": "https://undefeated.com"
+    },
+    "https://urbanindustry.co.uk": {
+        "apiKey": "bb297d1ae699e8b1ddd91d17152b13c3",
+        "siteName": "Urban Industry",
+        "myShopifyDomain": "urbanindustrystore.myshopify.com",
+        "notifGroup": "main",
+        "active": true,
+        "url": "https://urbanindustry.co.uk"
     }
 }
