@@ -3,8 +3,10 @@ from threading import Thread
 
 from modules.monitor import Monitor
 
+DEVELOPMENT = False
+
 if __name__ == "__main__":
-    with open('config/testingSites.json') as outfile:  
+    with open('config/' + ('testingSites' if DEVELOPMENT else 'sites') + '.json') as outfile:  
         sites = json.load(outfile)
 
     for site in sites:

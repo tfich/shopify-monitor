@@ -83,8 +83,12 @@ class Compare:
 
             if isFiltered(self.productInfo['title']):
                 self.productInfo['filtered'] = True
-            else:          
-                filterStr = self.productInfo['title'] + str(productId) + self.product['handle'].replace('-', ' ') + self.productInfo['image'] + self.product['vendor']  + ''.join(self.product['tags']) + self.product['variants']['edges'][0]['node']['title'] + self.product['variants']['edges'][0]['node']['sku']
+            else:
+                try:
+                    t = self.product['variants']['edges'][0]['node']['title'] + self.product['variants']['edges'][0]['node']['sku']
+                except:
+                    t = ''         
+                filterStr = self.productInfo['title'] + str(productId) + self.product['handle'].replace('-', ' ') + self.productInfo['image'] + self.product['vendor']  + ''.join(self.product['tags']) + t
                 isFilt = isFiltered(filterStr)
                 if isFilt:
                     self.productInfo['filtered'] = isFilt

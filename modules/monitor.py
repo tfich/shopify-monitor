@@ -10,9 +10,9 @@ from classes.timeParser import timeParser
 from classes.distribute import Distribute
 from classes.proxy import Proxy
 
-proxyManager = Proxy(useProxies=False)
+proxyManager = Proxy(useProxies=True)
 
-MONITOR_SLEEP = 10 #.5
+MONITOR_SLEEP = 1 #.5
 PROXY_ROTATION_RATE = 30 # Every X scrapes, will switch proxies
 
 class Monitor:
@@ -36,25 +36,18 @@ class Monitor:
         self.proxyNum = 0
         self.proxy = {}
 
-        self.rotationNum = 0
-
         self.run()
 
     def scrape(self):
         if self.isBase:
-            connection = "first: 250, reverse: true"
+            connection = "first: 250, reverse: true, sortKey: UPDATED_AT"
         else:
-            connection = """first: 100, reverse: true, query: "updated_at:>='{}'" """.format(str(self.lastUpdated))
+            connection = """first: 100, reverse: true, sortKey: UPDATED_AT, query: "updated_at:>='{}'" """.format(str(self.lastUpdated))
 
         schema = SCHEMA.replace("{PRODUCT_CONNECTION}", connection)
 
         if self.isBase or self.proxyNum == PROXY_ROTATION_RATE:
             self.proxy = proxyManager.nextProxy()
-        
-        # -> does not send notification for first two scrapes to prevent product spam
-        if self.rotationNum < 2:
-            self.sendNotif = False
-            self.rotationNum += 1
 
         try:
             req = requests.post(self.shopifyDomain + '/api/graphql.json', json={"query": schema}, headers=self.headers, proxies=self.proxy)
