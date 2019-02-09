@@ -21,12 +21,11 @@ class Proxy:
             log("[Error] - Unable to load proxies from file. Please check " + proxyPath)
 
         
-
     def format(self, proxyStr):
         proxyTemp = proxyStr.split(':')
 
         if len(proxyTemp) == 4:
-            formatted = '{}:{}:{}@{}'.format(proxyTemp[2], proxyTemp[3], proxyTemp[0], proxyTemp[1])
+            formatted = '{}:{}@{}:{}'.format(proxyTemp[2], proxyTemp[3], proxyTemp[0], proxyTemp[1])
         else:
             formatted = proxyTemp[0] + ':' + proxyTemp[1]
         
@@ -41,13 +40,14 @@ class Proxy:
         return False
 
     def nextProxy(self):
-        if self.currentProxy >= len(self.proxies):
+        if self.currentProxy >= len(self.proxies) - 1:
             self.currentProxy = 0
         
         self.currentProxy += 1
 
         with lock:
             if self.useProxies:
+                # print(self.proxies)
                 return self.proxies[self.currentProxy]
             return False
         
