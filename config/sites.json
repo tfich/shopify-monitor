@@ -673,5 +673,14 @@
         "active": true,
         "url": "https://eflash-jp.doverstreetmarket.com/",
         "sendPassProds": true
+    },
+    "https://eflash-us.doverstreetmarket.com/": {
+        "apiKey": "c61dfd7121456f05d58cedf7a0b068b6",
+        "siteName": "DSM NY",
+        "myShopifyDomain": "dover-street-market-ny.myshopify.com",
+        "notifGroup": "main",
+        "active": true,
+        "url": "https://eflash-us.doverstreetmarket.com/",
+        "sendPassProds": false
     }
 }
