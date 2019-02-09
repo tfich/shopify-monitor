@@ -20,6 +20,7 @@ class Monitor:
         self.link = link
         self.siteName = siteInfo['siteName']
         self.notifGroup = siteInfo['notifGroup']
+        self.sendPassProds = siteInfo['sendPassProds']
         self.shopifyDomain = "https://" + siteInfo['myShopifyDomain']
 
         self.headers = {
@@ -72,7 +73,8 @@ class Monitor:
             if not self.isBase:
                 Thread(target=Distribute, args=("Password Page Down", self.link, self.siteName, 'password')).start()
                 log('Password Page Down - ' + self.link)
-                self.sendNotif = False
+                if not self.sendPassProds:
+                    self.sendNotif = False
 
         if req.status_code == 304:
             pass

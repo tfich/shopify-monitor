@@ -10,6 +10,7 @@ for site in data:
     site['notifGroup'] = 'main'
     site['active'] = True
     site['url'] = s
+    site['sendPassProds'] = False
     
 os.remove(filename)
 with open(filename, 'w') as f:

@@ -5,7 +5,8 @@
         "myShopifyDomain": "ovouk.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://uk.octobersveryown.com"
+        "url": "https://uk.octobersveryown.com",
+        "sendPassProds": false
     },
     "https://us.octobersveryown.com": {
         "apiKey": "97f3874f6d268f1c681d88ef789edee3",
@@ -13,7 +14,8 @@
         "myShopifyDomain": "ovodev.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://us.octobersveryown.com"
+        "url": "https://us.octobersveryown.com",
+        "sendPassProds": false
     },
     "https://shopnicekicks.com": {
         "apiKey": "9d6556dc3ee20bf6b1a0971ad22f8238",
@@ -21,7 +23,8 @@
         "myShopifyDomain": "nice-kicks.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://shopnicekicks.com"
+        "url": "https://shopnicekicks.com",
+        "sendPassProds": false
     },
     "https://undefeated.com": {
         "apiKey": "a0faf54ad7ec6fbbab86cd3f949c3cb9",
@@ -29,7 +32,8 @@
         "myShopifyDomain": "undefeated.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://undefeated.com"
+        "url": "https://undefeated.com",
+        "sendPassProds": false
     },
     "https://thesportsedit.com": {
         "apiKey": "30dc444b3820c44599c865897bda4709",
@@ -37,7 +41,8 @@
         "myShopifyDomain": "thesportsedit-com.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://thesportsedit.com"
+        "url": "https://thesportsedit.com",
+        "sendPassProds": false
     },
     "https://deadstock.ca": {
         "apiKey": "29c1e1054770e9694717256c270f4359",
@@ -45,7 +50,8 @@
         "myShopifyDomain": "deadstock-ca.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://deadstock.ca"
+        "url": "https://deadstock.ca",
+        "sendPassProds": false
     },
     "https://shop-usa.palaceskateboards.com": {
         "apiKey": "59571a4e503fc3164848c544a5fda777",
@@ -53,7 +59,8 @@
         "myShopifyDomain": "palace-skateboards-usa.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://shop-usa.palaceskateboards.com"
+        "url": "https://shop-usa.palaceskateboards.com",
+        "sendPassProds": false
     },
     "https://12amrun.com": {
         "apiKey": "e5b0d0dc103ac126c494f8cc1fd70fe9",
@@ -61,7 +68,8 @@
         "myShopifyDomain": "12amrun.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://12amrun.com"
+        "url": "https://12amrun.com",
+        "sendPassProds": false
     },
     "https://a-ma-maniere.com": {
         "apiKey": "23348e90253d0a4895d5524b79914bbe",
@@ -69,7 +77,8 @@
         "myShopifyDomain": "a-ma-maniere.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://a-ma-maniere.com"
+        "url": "https://a-ma-maniere.com",
+        "sendPassProds": false
     },
     "https://addictmiami.com": {
         "apiKey": "902bdaf4657c0001f57576ff2d7e9950",
@@ -77,7 +86,8 @@
         "myShopifyDomain": "addictmiami.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://addictmiami.com"
+        "url": "https://addictmiami.com",
+        "sendPassProds": false
     },
     "https://blendsus.com": {
         "apiKey": "a695a9ac76b89f50663628617f8498f6",
@@ -85,7 +95,8 @@
         "myShopifyDomain": "blends-13.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://blendsus.com"
+        "url": "https://blendsus.com",
+        "sendPassProds": false
     },
     "https://bbcicecream.com": {
         "apiKey": "344bd1cc389a1b9d715d6a9103761258",
@@ -93,7 +104,8 @@
         "myShopifyDomain": "bbcicecream.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://bbcicecream.com"
+        "url": "https://bbcicecream.com",
+        "sendPassProds": false
     },
     "https://bowsandarrowsberkeley.com": {
         "apiKey": "4e1a1ec97a4ba0c0b8c4042f75b3e6dd",
@@ -101,7 +113,8 @@
         "myShopifyDomain": "bowsandarrowsberkeley.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://bowsandarrowsberkeley.com"
+        "url": "https://bowsandarrowsberkeley.com",
+        "sendPassProds": false
     },
     "https://burnrubbersneakers.com": {
         "apiKey": "7bbda6e82f72c3dba50a7f27be6227ec",
@@ -109,7 +122,8 @@
         "myShopifyDomain": "burn-rubber-2.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://burnrubbersneakers.com"
+        "url": "https://burnrubbersneakers.com",
+        "sendPassProds": false
     },
     "https://cncpts.com": {
         "apiKey": "5f6b24ca255661ff3414cee10472efd1",
@@ -117,7 +131,8 @@
         "myShopifyDomain": "conceptsintl.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://cncpts.com"
+        "url": "https://cncpts.com",
+        "sendPassProds": false
     },
     "https://shop.exclucitylife.com": {
         "apiKey": "c4fc1d7d22415da024299c8629e85d3a",
@@ -125,7 +140,8 @@
         "myShopifyDomain": "exclucity-3.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://shop.exclucitylife.com"
+        "url": "https://shop.exclucitylife.com",
+        "sendPassProds": false
     },
     "https://shop.extrabutterny.com": {
         "apiKey": "9474824e25b8e9a0f6ecd7d8be9a79de",
@@ -133,7 +149,8 @@
         "myShopifyDomain": "extrabutterny.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://shop.extrabutterny.com"
+        "url": "https://shop.extrabutterny.com",
+        "sendPassProds": false
     },
     "https://nrml.ca": {
         "apiKey": "6f55f8c75577c1063d8489c94d9ab122",
@@ -141,7 +158,8 @@
         "myShopifyDomain": "nrmlstreetwear.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://nrml.ca"
+        "url": "https://nrml.ca",
+        "sendPassProds": false
     },
     "https://noirfonce.eu": {
         "apiKey": "39aa752c77d4ac53e9daf9d49f61c0ad",
@@ -149,7 +167,8 @@
         "myShopifyDomain": "noirfonce.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://noirfonce.eu"
+        "url": "https://noirfonce.eu",
+        "sendPassProds": false
     },
     "https://offthehook.ca": {
         "apiKey": "2e0e6c2f045e1c04714f65b0a0b30b0c",
@@ -157,7 +176,8 @@
         "myShopifyDomain": "oth-boutique.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://offthehook.ca"
+        "url": "https://offthehook.ca",
+        "sendPassProds": false
     },
     "https://oneness287.com": {
         "apiKey": "5de5d471976e82ceba582a81606e0ac5",
@@ -165,7 +185,8 @@
         "myShopifyDomain": "oneness287-2.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://oneness287.com"
+        "url": "https://oneness287.com",
+        "sendPassProds": false
     },
     "https://properlbc.com": {
         "apiKey": "5c6d8f621dc3cd0cc5f37886ea8aa34f",
@@ -173,7 +194,8 @@
         "myShopifyDomain": "apropersite.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://properlbc.com"
+        "url": "https://properlbc.com",
+        "sendPassProds": false
     },
     "https://rsvpgallery.com": {
         "apiKey": "68861eece3d19735546a05faf429e759",
@@ -181,7 +203,8 @@
         "myShopifyDomain": "rsvp-gallery.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://rsvpgallery.com"
+        "url": "https://rsvpgallery.com",
+        "sendPassProds": false
     },
     "https://us.reigningchamp.com": {
         "apiKey": "cdecb98ef85c1fac66576864dbd5ab9c",
@@ -189,7 +212,8 @@
         "myShopifyDomain": "reigningchamp-us.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://us.reigningchamp.com"
+        "url": "https://us.reigningchamp.com",
+        "sendPassProds": false
     },
     "https://rimenyc.com ": {
         "apiKey": "1b12b20efde8a2055a4b11b7821a4e02",
@@ -197,7 +221,8 @@
         "myShopifyDomain": "rime.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://rimenyc.com "
+        "url": "https://rimenyc.com ",
+        "sendPassProds": false
     },
     "https://rise45.com": {
         "apiKey": "f2be3597cd0ea22e67c89a3b5b5b22fd",
@@ -205,7 +230,8 @@
         "myShopifyDomain": "rise45.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://rise45.com"
+        "url": "https://rise45.com",
+        "sendPassProds": false
     },
     "https://saintalfred.com": {
         "apiKey": "849af6fa065de14b021e119a4ad12bc0",
@@ -213,7 +239,8 @@
         "myShopifyDomain": "newbalance-stalfred-com.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://saintalfred.com"
+        "url": "https://saintalfred.com",
+        "sendPassProds": false
     },
     "https://sneakerpolitics.com": {
         "apiKey": "e7f4837ec5196326af7949de4b8381fe",
@@ -221,7 +248,8 @@
         "myShopifyDomain": "sneakerpolitics.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://sneakerpolitics.com"
+        "url": "https://sneakerpolitics.com",
+        "sendPassProds": false
     },
     "https://socialstatuspgh.com": {
         "apiKey": "a62a7cdb1689c171a551ac61e92dc08a",
@@ -229,7 +257,8 @@
         "myShopifyDomain": "social-status.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://socialstatuspgh.com"
+        "url": "https://socialstatuspgh.com",
+        "sendPassProds": false
     },
     "https://solefly.com": {
         "apiKey": "b51037e17cfc5e142a20ef01f0b44751",
@@ -237,7 +266,8 @@
         "myShopifyDomain": "solefly.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://solefly.com"
+        "url": "https://solefly.com",
+        "sendPassProds": false
     },
     "https://soleheaven.com": {
         "apiKey": "ec56cdf3407c6f93ac50558c9003d282",
@@ -245,7 +275,8 @@
         "myShopifyDomain": "soleheaven-stencil.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://soleheaven.com"
+        "url": "https://soleheaven.com",
+        "sendPassProds": false
     },
     "https://suede-store.com": {
         "apiKey": "71f164fa1c603d9d3da229312d52cc1d",
@@ -253,7 +284,8 @@
         "myShopifyDomain": "suede-test.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://suede-store.com"
+        "url": "https://suede-store.com",
+        "sendPassProds": false
     },
     "https://trophyroomstore.com": {
         "apiKey": "1b124ca786ab5fc9065699f1a383a139",
@@ -261,7 +293,8 @@
         "myShopifyDomain": "trophy-room-store.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://trophyroomstore.com"
+        "url": "https://trophyroomstore.com",
+        "sendPassProds": false
     },
     "https://wishatl.com": {
         "apiKey": "7678df516143cdcb4c72168e8556b583",
@@ -269,7 +302,8 @@
         "myShopifyDomain": "wish-development-store.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://wishatl.com"
+        "url": "https://wishatl.com",
+        "sendPassProds": false
     },
     "https://xhibition.co": {
         "apiKey": "7f11f1a79cb6f8d07bca2f1d113177ef",
@@ -277,7 +311,8 @@
         "myShopifyDomain": "xhibition.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://xhibition.co"
+        "url": "https://xhibition.co",
+        "sendPassProds": false
     },
     "https://oipolloi.com": {
         "apiKey": "fc5579f3adf2889237757219239a7f40",
@@ -285,7 +320,8 @@
         "myShopifyDomain": "oi-polloi.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://oipolloi.com"
+        "url": "https://oipolloi.com",
+        "sendPassProds": false
     },
     "https://featuresneakerboutique.com": {
         "apiKey": "d3ced42695b5dc27734d4638c3a97ae1",
@@ -293,7 +329,8 @@
         "myShopifyDomain": "feature-sneaker-boutique.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://featuresneakerboutique.com"
+        "url": "https://featuresneakerboutique.com",
+        "sendPassProds": false
     },
     "https://freshragsfl.com": {
         "apiKey": "86fa489fb22ad7736e1f0a944a7cc393",
@@ -301,7 +338,8 @@
         "myShopifyDomain": "fresh-rags-fl.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://freshragsfl.com"
+        "url": "https://freshragsfl.com",
+        "sendPassProds": false
     },
     "https://westnyc.com": {
         "apiKey": "0e53a49a22727a2e6b7c7fb6fa4d1803",
@@ -309,7 +347,8 @@
         "myShopifyDomain": "west-147.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://westnyc.com"
+        "url": "https://westnyc.com",
+        "sendPassProds": false
     },
     "https://manorphx.com": {
         "apiKey": "7a9aea55bd6a9c8389d7e6413e71700a",
@@ -317,7 +356,8 @@
         "myShopifyDomain": "manorphx.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://manorphx.com"
+        "url": "https://manorphx.com",
+        "sendPassProds": false
     },
     "https://fearofgod.com": {
         "apiKey": "0cf616930515540d894572734816ed6a",
@@ -325,7 +365,8 @@
         "myShopifyDomain": "fear-of-god.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://fearofgod.com"
+        "url": "https://fearofgod.com",
+        "sendPassProds": false
     },
     "https://abovethecloudsstore.com": {
         "apiKey": "a477642c8fa910aaa2571f029b4501ba",
@@ -333,7 +374,8 @@
         "myShopifyDomain": "abovethecloudsstore.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://abovethecloudsstore.com"
+        "url": "https://abovethecloudsstore.com",
+        "sendPassProds": false
     },
     "https://urbanindustry.co.uk": {
         "apiKey": "bb297d1ae699e8b1ddd91d17152b13c3",
@@ -341,7 +383,8 @@
         "myShopifyDomain": "urbanindustrystore.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://urbanindustry.co.uk"
+        "url": "https://urbanindustry.co.uk",
+        "sendPassProds": false
     },
     "https://solestop.com": {
         "apiKey": "3dfdb802d097820b6246b897a21b60c2",
@@ -349,7 +392,8 @@
         "myShopifyDomain": "solestopstore.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://solestop.com"
+        "url": "https://solestop.com",
+        "sendPassProds": false
     },
     "https://ficegallery.com": {
         "apiKey": "1b5be89fa110de5f11243a85cce0e119",
@@ -357,7 +401,8 @@
         "myShopifyDomain": "ficegallery.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://ficegallery.com"
+        "url": "https://ficegallery.com",
+        "sendPassProds": false
     },
     "https://incu.com": {
         "apiKey": "9187e87ac0570a5379c110ea8e1b0f9f",
@@ -365,7 +410,8 @@
         "myShopifyDomain": "incu-2.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://incu.com"
+        "url": "https://incu.com",
+        "sendPassProds": false
     },
     "https://notre-shop.com": {
         "apiKey": "2f85af10bb30c1b7a78259b6c1c49d53",
@@ -373,7 +419,8 @@
         "myShopifyDomain": "notre.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://notre-shop.com"
+        "url": "https://notre-shop.com",
+        "sendPassProds": false
     },
     "https://courtsidesneakers.com": {
         "apiKey": "df3f69558213cc0733a48de759c86409",
@@ -381,7 +428,8 @@
         "myShopifyDomain": "courtside-sneakers.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://courtsidesneakers.com"
+        "url": "https://courtsidesneakers.com",
+        "sendPassProds": false
     },
     "https://hanon-shop.com": {
         "apiKey": "f73913c594921bdd6a18a32bc2e2d7df",
@@ -389,7 +437,8 @@
         "myShopifyDomain": "hanonify.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://hanon-shop.com"
+        "url": "https://hanon-shop.com",
+        "sendPassProds": false
     },
     "https://highsandlows.net.au": {
         "apiKey": "29452cd62f80a6435ff15e311766261d",
@@ -397,7 +446,8 @@
         "myShopifyDomain": "highsandlows.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://highsandlows.net.au"
+        "url": "https://highsandlows.net.au",
+        "sendPassProds": false
     },
     "https://justdon.com": {
         "apiKey": "2df51fc89cc41bbe749aed235d8e0df9",
@@ -405,7 +455,8 @@
         "myShopifyDomain": "shopjustdon.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://justdon.com"
+        "url": "https://justdon.com",
+        "sendPassProds": false
     },
     "https://lessoneseven.com": {
         "apiKey": "29d7874ed8083fa025a2e863ef87f145",
@@ -413,7 +464,8 @@
         "myShopifyDomain": "lessoneseven.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://lessoneseven.com"
+        "url": "https://lessoneseven.com",
+        "sendPassProds": false
     },
     "https://machusonline.com": {
         "apiKey": "85ef1c2852f958c66504c5bf1768c729",
@@ -421,7 +473,8 @@
         "myShopifyDomain": "machus.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://machusonline.com"
+        "url": "https://machusonline.com",
+        "sendPassProds": false
     },
     "https://lapstoneandhammer.com": {
         "apiKey": "49b214ac5d8865c0b591436dc44be785",
@@ -429,7 +482,8 @@
         "myShopifyDomain": "lapstoneandhammer-com.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://lapstoneandhammer.com"
+        "url": "https://lapstoneandhammer.com",
+        "sendPassProds": false
     },
     "https://nomadshop.net": {
         "apiKey": "90fb76d917bf25d3148ba5d447fa4d6d",
@@ -437,7 +491,8 @@
         "myShopifyDomain": "nomadshop.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://nomadshop.net"
+        "url": "https://nomadshop.net",
+        "sendPassProds": false
     },
     "https://renarts.com": {
         "apiKey": "fe288dcbb1f39f890295118d31cef77e",
@@ -445,7 +500,8 @@
         "myShopifyDomain": "renarts.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://renarts.com"
+        "url": "https://renarts.com",
+        "sendPassProds": false
     },
     "https://rockcitykicks.com": {
         "apiKey": "0e2c941e4486f31180e1385a50546d2d",
@@ -453,7 +509,8 @@
         "myShopifyDomain": "rock-city-kicks.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://rockcitykicks.com"
+        "url": "https://rockcitykicks.com",
+        "sendPassProds": false
     },
     "https://theclosetinc.com": {
         "apiKey": "5e2769503be62e4bc6e746fb31678180",
@@ -461,7 +518,8 @@
         "myShopifyDomain": "shermaine-washington.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://theclosetinc.com"
+        "url": "https://theclosetinc.com",
+        "sendPassProds": false
     },
     "https://unknwn.com": {
         "apiKey": "5ba2ba340438b8d9aaca1a5ddb1ad0f5",
@@ -469,7 +527,8 @@
         "myShopifyDomain": "unknwn-3.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://unknwn.com"
+        "url": "https://unknwn.com",
+        "sendPassProds": false
     },
     "https://worldofhombre.com": {
         "apiKey": "4fb4d606b320228541a5d97b0ce8b614",
@@ -477,7 +536,8 @@
         "myShopifyDomain": "worldofhombre.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://worldofhombre.com"
+        "url": "https://worldofhombre.com",
+        "sendPassProds": false
     },
     "https://hannibalstore.it": {
         "apiKey": "f7c3443c94011d60bdda3d658cf3d3a7",
@@ -485,7 +545,8 @@
         "myShopifyDomain": "hannibalstore.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://hannibalstore.it"
+        "url": "https://hannibalstore.it",
+        "sendPassProds": false
     },
     "https://epitomeatl.com": {
         "apiKey": "3c1a9192c0e011e99be96cb7fa90e489",
@@ -493,7 +554,8 @@
         "myShopifyDomain": "epitome-atl.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://epitomeatl.com"
+        "url": "https://epitomeatl.com",
+        "sendPassProds": false
     },
     "https://capsuletoronto.com": {
         "apiKey": "748d6a9d626b2a10df7fd111523a3136",
@@ -501,7 +563,8 @@
         "myShopifyDomain": "capsuletoronto.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://capsuletoronto.com"
+        "url": "https://capsuletoronto.com",
+        "sendPassProds": false
     },
     "https://bbbranded.com": {
         "apiKey": "84a4f0bae78edb9c62de04624fa11cc5",
@@ -509,7 +572,8 @@
         "myShopifyDomain": "bb-branded.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://bbbranded.com"
+        "url": "https://bbbranded.com",
+        "sendPassProds": false
     },
     "https://dope-factory.com": {
         "apiKey": "e0b947f300b03ad31eb971a391e6944e",
@@ -517,7 +581,8 @@
         "myShopifyDomain": "dope-test.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://dope-factory.com"
+        "url": "https://dope-factory.com",
+        "sendPassProds": false
     },
     "https://cityblueshop.com": {
         "apiKey": "75fc54dfff66076b2100607150988b13",
@@ -525,7 +590,8 @@
         "myShopifyDomain": "city-blue-2.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://cityblueshop.com"
+        "url": "https://cityblueshop.com",
+        "sendPassProds": false
     },
     "https://creme321.com": {
         "apiKey": "195828e2ef14c58600012bc14a1f7081",
@@ -533,7 +599,8 @@
         "myShopifyDomain": "creme321.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://creme321.com"
+        "url": "https://creme321.com",
+        "sendPassProds": false
     },
     "https://kongonline.co.uk": {
         "apiKey": "3a5a9a2f52c7a1715d181aee40de3ff2",
@@ -541,7 +608,8 @@
         "myShopifyDomain": "kongonline.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://kongonline.co.uk"
+        "url": "https://kongonline.co.uk",
+        "sendPassProds": false
     },
     "https://laceupnyc.com": {
         "apiKey": "299490a7a803c9be7370c4805e897bca",
@@ -549,7 +617,8 @@
         "myShopifyDomain": "laceupnyc-2.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://laceupnyc.com"
+        "url": "https://laceupnyc.com",
+        "sendPassProds": false
     },
     "https://sesinko.com": {
         "apiKey": "fc83a91dee6dde4e8c71527fb8f22e0e",
@@ -557,7 +626,8 @@
         "myShopifyDomain": "sesinko.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://sesinko.com"
+        "url": "https://sesinko.com",
+        "sendPassProds": false
     },
     "https://shoegallerymiami.com": {
         "apiKey": "4b29eb8c96c04b163ae2fac313043717",
@@ -565,7 +635,8 @@
         "myShopifyDomain": "shoe-gallery-inc.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://shoegallerymiami.com"
+        "url": "https://shoegallerymiami.com",
+        "sendPassProds": false
     },
     "https://packershoes.com": {
         "apiKey": "b26bacc7a6c3fb5ea949af1df91f3d1b",
@@ -573,7 +644,8 @@
         "myShopifyDomain": "packer-shoes.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://packershoes.com"
+        "url": "https://packershoes.com",
+        "sendPassProds": false
     },
     "https://tylertesting11.myshopify.com": {
         "apiKey": "02d3ad0e2d6c2274a844c22e82da5075",
@@ -581,7 +653,8 @@
         "myShopifyDomain": "tylertesting11.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://tylertesting11.myshopify.com"
+        "url": "https://tylertesting11.myshopify.com",
+        "sendPassProds": false
     },
     "https://kith.com": {
         "apiKey": "08430b96c47dd2ac8e17e305db3b71e8",
@@ -589,6 +662,16 @@
         "myShopifyDomain": "kithnyc.myshopify.com",
         "notifGroup": "main",
         "active": true,
-        "url": "https://kith.com"
+        "url": "https://kith.com",
+        "sendPassProds": false
+    },
+    "https://eflash-jp.doverstreetmarket.com/": {
+        "apiKey": "8cbefa53e1484d3a39a41396a00b9fe9",
+        "siteName": "DSM JP",
+        "myShopifyDomain": "dover-street-market-jp.myshopify.com",
+        "notifGroup": "dsm",
+        "active": true,
+        "url": "https://eflash-jp.doverstreetmarket.com/",
+        "sendPassProds": true
     }
 }

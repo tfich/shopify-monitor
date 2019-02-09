@@ -28,6 +28,7 @@ siteInfo = getSiteInfo(newSiteUrl)
 siteInfo['notifGroup'] = 'main'
 siteInfo['active'] = True
 siteInfo['url'] = newSiteUrl
+siteInfo['sendPassProds'] = False
 
 data[newSiteUrl] = siteInfo
 print(data[newSiteUrl])
