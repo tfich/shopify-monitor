@@ -43,7 +43,7 @@ class Distribute:
             for client in CLIENTS:
                 Thread(target=self.sendProduct, args=(client,)).start()
 
-        if SEND_LOGS:
+        if SEND_LOGS and self.productInfo['filtered']:
             Thread(target=(self.sendLog)).start()
 
     def sendPassword(self, client):

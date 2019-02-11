@@ -678,9 +678,27 @@
         "apiKey": "c61dfd7121456f05d58cedf7a0b068b6",
         "siteName": "DSM NY",
         "myShopifyDomain": "dover-street-market-ny.myshopify.com",
-        "notifGroup": "main",
+        "notifGroup": "dsm",
         "active": true,
         "url": "https://eflash-us.doverstreetmarket.com/",
+        "sendPassProds": false
+    },
+    "https://us.bape.com/": {
+        "apiKey": "a45de9ba54947c6286e329042853dafc",
+        "siteName": "us.bape.com",
+        "myShopifyDomain": "bape.myshopify.com",
+        "notifGroup": "bape",
+        "active": true,
+        "url": "https://us.bape.com/",
+        "sendPassProds": false
+    },
+    "https://runge-copenhagen.myshopify.com": {
+        "apiKey": "0f963e26062b5098a4382376bd0b10f1",
+        "siteName": "RUNGE",
+        "myShopifyDomain": "runge-copenhagen.myshopify.com",
+        "notifGroup": "main",
+        "active": true,
+        "url": "https://runge-copenhagen.myshopify.com",
         "sendPassProds": false
     }
 }

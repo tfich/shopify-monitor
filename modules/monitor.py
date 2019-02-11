@@ -48,6 +48,7 @@ class Monitor:
         schema = SCHEMA.replace("{PRODUCT_CONNECTION}", connection)
 
         if self.isBase or self.proxyNum == PROXY_ROTATION_RATE:
+            self.proxyNum = 0
             self.proxy = proxyManager.nextProxy()
 
         try:
